@@ -1,0 +1,9 @@
+# Evergreen Portal Repo — managed by portal_publisher.py
+# Each subdirectory is one project slug.  Nothing else belongs here.
+*.log
+*.tmp
+*.cache
+node_modules/
+venv/
+__pycache__/
+.DS_Store
