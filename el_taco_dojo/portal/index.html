@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Taco Dojo — Preview Portal</title>
+    <style>
+        :root {
+            --bg: #f6f7fb;
+            --card-bg: #ffffff;
+            --text: #1f2933;
+            --muted: #667085;
+            --accent: #2563eb;
+            --border: #e5e7eb;
+            --shadow: 0 10px 25px rgba(31, 41, 51, 0.08);
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: "Inter", "Segoe UI", Arial, sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.6;
+        }
+        .header {
+            background: #1f2933;
+            color: white;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header-title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .header-badge {
+            background: var(--accent);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 24px 60px;
+        }
+        h1 {
+            margin: 0 0 12px;
+            font-size: 28px;
+            letter-spacing: -0.02em;
+        }
+        h3 {
+            font-size: 18px;
+            margin: 24px 0 12px;
+            letter-spacing: -0.01em;
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .business-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            align-items: start;
+        }
+        .business-info {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .business-info p {
+            margin: 0;
+            font-size: 14px;
+            color: var(--muted);
+        }
+        .rating-pill {
+            display: inline-block;
+            padding: 6px 12px;
+            background: #fef3c7;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #92400e;
+            width: fit-content;
+        }
+        .industry-pill {
+            display: inline-block;
+            padding: 6px 12px;
+            background: #dbeafe;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #1e40af;
+            width: fit-content;
+        }
+        .quality-box {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .quality-badge {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        .score-bar {
+            background: #e5e7eb;
+            height: 8px;
+            border-radius: 4px;
+            width: 100%;
+            overflow: hidden;
+        }
+        .score-bar-fill {
+            background: linear-gradient(to right, #10b981, #3b82f6);
+            height: 100%;
+            width: 0%;
+        }
+        .section {
+            margin-bottom: 24px;
+        }
+        code {
+            background: #f3f4f6;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: 12px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 12px;
+            color: var(--muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-title">Evergreen Digital Agency</div>
+        <div class="header-badge">Preview Portal</div>
+    </div>
+
+    <div class="page">
+        <!-- Business Card -->
+        <div class="card business-card">
+            <div class="business-info">
+                <h1 style="margin:0;font-size:24px">El Taco Dojo</h1>
+                <p>41770 Hayes Rd, Clinton Township, MI 48038, USA</p>
+                <p>(586) 738-6356</p>
+                <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
+                    <span class="industry-pill">Generic</span>
+                </div>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:12px">
+                <div class="rating-pill">★★★★✯ 4.9 (377 reviews)</div>
+            </div>
+        </div>
+
+        <!-- Quality Score -->
+        <div class="card">
+            <h3 style="margin-top:0">Quality Score</h3>
+            <div class="quality-box">
+                <div class="quality-badge">
+                    <span style="display:inline-block;padding:6px 12px;background:#6b7280;color:white;border-radius:6px;font-weight:bold;font-size:16px;min-width:40px;text-align:center">?</span>
+                    <div style="font-size:12px;color:var(--muted)">Grade</div>
+                </div>
+                <div style="flex:1">
+                    <div style="display:flex;justify-content:space-between;margin-bottom:8px">
+                        <span style="font-size:14px;font-weight:500">0/100</span>
+                        <span style="font-size:12px;color:var(--muted)">Overall Score</span>
+                    </div>
+                    <div class="score-bar">
+                        <div class="score-bar-fill"></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Before Section (if mirror content) -->
+        
+
+        <!-- Contact Email (if extracted) -->
+        
+
+        <!-- Best Theme Preview -->
+        
+    <section class="section">
+      <h3 style="margin-top:0">Your New Site Preview</h3>
+      <div style="padding:24px;background:#f0f9ff;border:1px solid #bfdbfe;border-radius:8px;color:#1e40af;text-align:center">
+        Themes not yet generated. Run: <code style="background:#fff;padding:2px 6px;border-radius:3px">sitekit generate_versions {business_name}</code>
+      </div>
+    </section>
+
+
+        <!-- Photos -->
+        
+
+        <!-- CTAs -->
+        
+    <section class="section" style="background:#f9fafb;padding:24px;border-radius:8px;text-align:center">
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+        <a href="version_index.html" style="padding:10px 16px;background:#2563eb;color:white;border-radius:6px;text-decoration:none;font-size:14px">View All Themes →</a>
+        <a href="build_quality.json" style="padding:10px 16px;background:#6b7280;color:white;border-radius:6px;text-decoration:none;font-size:14px">Quality Report</a>
+      </div>
+    </section>
+
+
+        <!-- Footer -->
+        <div class="footer">
+            Generated by SiteKit v2.1 · Evergreen Digital Agency · 2026-05-11
+        </div>
+    </div>
+</body>
+</html>
